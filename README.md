@@ -25,7 +25,7 @@ This toolset is compatible to the latest voreen version (5). [Voreen download](h
 After connecting the network and loading the mandatory points file simply press the ALT key and use the left mouse button to select points. If you want to deselect points use ALT key and right mouse button. The ALT key could be set to a different key in the settings.
 
 There are two example workspaces contained which show the usage. 
-When voreen with the module is compiled the fastest way to get started is:
+Once voreen is compiled with the module, the fastest way to get started is:
 * Load the animation example workspace.
 * Remove all processors not visible in the example images below
 * Add the missing processors
