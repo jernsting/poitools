@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/jernsting/poitools.svg?branch=master)](https://travis-ci.com/jernsting/poitools) ![License](https://img.shields.io/github/license/jernsting/poitools) ![Releases](https://img.shields.io/github/v/release/jernsting/poitools)
 # POI-Toolbox
 
 This toolset was developed to select points of interest on 3D surfaces. It is integrated in the voreen toolbox (voreen.uni-muenster.de)
@@ -19,6 +20,18 @@ This toolset currently contains two processors:
 
 This toolset is compatible to the latest voreen version (5). [Voreen download](http://voreen.uni-muenster.de)
 
+## Usage
+
+After connecting the network and loading the mandatory points file simply press the ALT key and use the left mouse button to select points. If you want to deselect points use ALT key and right mouse button. The ALT key could be set to a different key in the settings.
+
+There are two example workspaces contained which show the usage. 
+When voreen with the module is compiled the fastest way to get started is:
+* Load the animation example workspace.
+* Remove all processors not visible in the example images below
+* Add the missing processors
+* Set one output of the SingleVolumeRaycaster to FHP.
+* Connect the network as shown in the examples
+
 ## Pointfitting
 
 ![Pointfitting processor](img/pointfitting.png)
@@ -33,17 +46,6 @@ See example.txt
 
 ![Pointfitting network](img/pointfitting_network.png)
 
-### Usage
-
-After connecting the network and loading the mandatory points file simply press the ALT key and use the left mouse button to select points. If you want to deselect points use ALT key and right mouse button. The ALT key could be set to a different key in the settings.
-
-There are two example workspaces contained which show the usage. 
-When voreen with the module is compiled the fastest way to get started is:
-* Load the animation example workspace.
-* Remove all processors not visible in the example images below
-* Add the missing processors
-* Set one output of the SingleVolumeRaycaster to FHP.
-* Connect the network as shown in the examples
 
 ## Surfacemeasure
 
