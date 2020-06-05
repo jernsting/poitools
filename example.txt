@@ -1,0 +1,7 @@
+nose tip
+outher left eye side (->)
+outher right eye side (<-)
+left mouth angle (->)
+right mouth angle (<-)
+outermost left head edge (->)
+outermost right head edge (<-)
