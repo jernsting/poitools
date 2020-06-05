@@ -32,6 +32,8 @@ When voreen with the module is compiled the fastest way to get started is:
 * Set one output of the SingleVolumeRaycaster to FHP.
 * Connect the network as shown in the examples
 
+Once the network is build and the canvas shows the desired output, the default key combination to set pois is ALT + left mouse button. ALT and right mouse button will remove the last poi. 
+
 ## Pointfitting
 
 ![Pointfitting processor](img/pointfitting.png)
