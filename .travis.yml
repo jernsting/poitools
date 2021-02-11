@@ -11,7 +11,7 @@ before_script:
   - ls | grep -v poitools_dir | xargs mv -t poitools_dir
   - mv poitools_dir poitools
   - wget https://www.uni-muenster.de/imperia/md/content/voreen/release/voreen-src-5.2.0-unix.tar.gz
-  - tar -xvaf voreen-5.2.0-linux.tar.gz
+  - tar -xvaf voreen-src-5.2.0-unix.tar.gz
   - mv poitools voreen-src-unix-nightly/custommodules
   - cd voreen-src-unix-nightly
   - mkdir build
