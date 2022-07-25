@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push
+
+jobs:
+  build:
+    name: Build POITools
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install requirements
+        run: |
+          sudo apt update
+          sudo apt install -y g++ git cmake libboost-all-dev libglew-dev qt5-default libqt5svg5-dev  libdevil-dev libgdcm2-dev libtiff5-dev ffmpeg libswscale-dev libavcodec-dev libavformat-dev
+      - name: Prepare build
+        run: |
+            mkdir poitools_dir
+            ls | grep -v poitools_dir | xargs mv -t poitools_dir
+            mv poitools_dir poitools
+            wget https://www.uni-muenster.de/imperia/md/content/voreen/release/voreen-src-5.2.0-unix.tar.gz
+            tar -xvaf voreen-src-5.2.0-unix.tar.gz
+            mv poitools voreen-src-unix-nightly/custommodules
+            cd voreen-src-unix-nightly
+            mkdir build
+            cd build
+      - name: Build
+        run: |
+            cmake -DVRN_MODULE_POITOOLS=ON ..
+            cmake -DVRN_MODULE_POITOOLS=ON -G "Unix Makefiles" ..
+            make -j $(nproc)
