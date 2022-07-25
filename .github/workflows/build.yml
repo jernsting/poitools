@@ -13,7 +13,7 @@ jobs:
       - name: Install requirements
         run: |
           sudo apt update
-          sudo apt install -y g++ git cmake libboost-all-dev libglew-dev qt5-default libqt5svg5-dev  libdevil-dev libgdcm2-dev libtiff5-dev ffmpeg libswscale-dev libavcodec-dev libavformat-dev
+          sudo apt install -y g++ git cmake libboost-all-dev libglew-dev qt5-default libqt5svg5-dev  libdevil-dev libgdcm-dev libtiff5-dev ffmpeg libswscale-dev libavcodec-dev libavformat-dev
       - name: Prepare build
         run: |
             mkdir poitools_dir
