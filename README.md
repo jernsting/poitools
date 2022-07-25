@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/jernsting/poitools.svg?branch=master)](https://travis-ci.com/jernsting/poitools) ![License](https://img.shields.io/github/license/jernsting/poitools) ![Releases](https://img.shields.io/github/v/release/jernsting/poitools)
+[![Build](https://github.com/jernsting/poitools/actions/workflows/build.yml/badge.svg)](https://github.com/jernsting/poitools/actions/workflows/build.yml) ![License](https://img.shields.io/github/license/jernsting/poitools) ![Releases](https://img.shields.io/github/v/release/jernsting/poitools)
 # POI-Toolbox
 
 This toolset was developed to select points of interest on 3D surfaces. It is integrated in the voreen toolbox (voreen.uni-muenster.de)
