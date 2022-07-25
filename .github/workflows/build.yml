@@ -27,6 +27,7 @@ jobs:
             cd build
       - name: Build
         run: |
-            cmake -DVRN_MODULE_POITOOLS=ON ..
+            pwd
+            cmake -DVRN_MODULE_POITOOLS=ON "" ..
             cmake -DVRN_MODULE_POITOOLS=ON -G "Unix Makefiles" ..
             make -j $(nproc)
