@@ -27,7 +27,7 @@ jobs:
             cd build
       - name: Build
         run: |
-            cd build
+            cd voreen-src-unix-nightly/build
             cmake -DVRN_MODULE_POITOOLS=ON "" ..
             cmake -DVRN_MODULE_POITOOLS=ON -G "Unix Makefiles" "" ..
             make -j $(nproc)
